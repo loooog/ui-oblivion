@@ -1,0 +1,68 @@
+.border-w1 {
+	border: 1px solid $white_1;
+}
+.border-g4 {
+	border: 1px solid $green_4;
+}
+
+.border-t-g2 {
+	border-top: 1px solid $green_2;
+}
+.border-t-g3 {
+	border-top: 1px solid $green_3;
+}
+
+.border-b-g1 {
+	border-bottom: 1px solid $green_1;
+}
+.border-b-g2 {
+	border-bottom: 1px solid $green_2;
+}
+.border-b-g3 {
+	border-bottom: 1px solid $green_3;
+}
+
+.border-rad-4 {
+	border-radius: 4px;
+}
+
+.border-l-dotted-w3 {
+	border-left: 1px dotted $white_3;
+}
+
+.border-r-dotted-w3 {
+	border-right: 1px dotted $white_3;
+}
+
+.border-trl-g3 {
+	border: 1px solid $green_3;
+	border-bottom: none;
+	border-radius: 2px
+}
+.border-trl-g2 {
+	border: 1px solid $green_2;
+	border-bottom: none;
+	border-radius: 2px
+}
+.border-rl-y4-g5 {
+	border-left: 1px solid $yellow_4;
+	border-right: 1px solid $green_5;
+}
+.border-rl-g5-y4 {
+	border-left: 1px solid $green_5;
+	border-right: 1px solid $yellow_4;
+}
+.border-rl-g5 {
+	border-left: 1px solid $green_5;
+	border-right: 1px solid $green_5;
+}
+.border-brl-g2 {
+	border: 1px solid $green_2;
+	border-top: none;
+	border-radius: 2px
+}
+.border-brl-g3 {
+	border: 1px solid $green_3;
+	border-top: none;
+	border-radius: 2px
+}

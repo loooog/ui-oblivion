@@ -1,0 +1,74 @@
+node {
+	@extend .horizontal;
+	@extend .height-40;
+	@extend .border-b-g3;
+	@extend .pad-b-5;
+
+	h2 {
+		color: $green_6;
+
+		&::first-letter {
+			color: $green;
+		}
+	}
+}
+
+drone-table {
+	@extend .vertical;
+	@extend .flex-1;
+}
+
+identifications {
+	@extend .vertical;
+	@extend .height-120;
+	@extend .border-t-g2;
+	@extend .border-b-g2;
+	@extend .pad-t-5;
+	@extend .pad-b-5;
+}
+
+identification {
+	@extend .vertical;
+	@extend .flex-1;
+	@extend .pad-t-15;
+	@extend .pad-b-15;
+
+	&:first-of-type {
+		@extend .margin-l-5;
+	}
+	&:last-of-type {
+		@extend .margin-r-5;
+	}
+	&:not(:last-of-type) {
+		@extend .margin-r-20;
+	}
+}
+
+position-data {
+	@extend .vertical;
+	@extend .flex-1;
+	@extend .border-t-g2;
+	@extend .border-b-g2;
+}
+
+drone {
+	@extend .vertical;
+	@extend .flex-1;
+}
+
+dispatched-drone {
+	@extend .horizontal;
+	@extend .flex-1;
+}
+
+diagnostic-matrix {
+}
+
+fuel-status {
+}
+
+ammunition {
+}
+
+energy-usage {
+}
