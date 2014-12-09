@@ -9,7 +9,7 @@
 angular.module('oblivionApp')
   .directive('diagnosticMatrix', function () {
     return {
-      templateUrl: 'templates/diagnosticMatrix.html',
+      templateUrl: 'views/diagnosticMatrix.html',
       restrict: 'E',
       link: function postLink(scope, element, attrs) {
       }

@@ -9,7 +9,7 @@
 angular.module('oblivionApp')
   .directive('identification', function () {
     return {
-      templateUrl: 'templates/identification.html',
+      templateUrl: 'views/identification.html',
       restrict: 'E',
       link: function postLink(scope, element, attrs) {
       }

@@ -9,7 +9,7 @@
 angular.module('oblivionApp')
   .directive('node', function () {
     return {
-      templateUrl: 'templates/node.html',
+      templateUrl: 'views/node.html',
       restrict: 'E',
       scope: {
       	serial: '@serial',

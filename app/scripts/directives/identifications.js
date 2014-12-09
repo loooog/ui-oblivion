@@ -9,7 +9,7 @@
 angular.module('oblivionApp')
   .directive('identifications', function () {
     return {
-      templateUrl: 'templates/identifications.html',
+      templateUrl: 'views/identifications.html',
       restrict: 'E',
       link: function postLink(scope, element, attrs) {
       	scope.drones = [

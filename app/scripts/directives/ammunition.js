@@ -9,7 +9,7 @@
 angular.module('oblivionApp')
   .directive('ammunition', function () {
     return {
-      templateUrl: 'templates/ammunition.html',
+      templateUrl: 'views/ammunition.html',
       restrict: 'E',
       link: function postLink(scope, element, attrs) {
       }

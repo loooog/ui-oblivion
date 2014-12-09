@@ -9,7 +9,7 @@
 angular.module('oblivionApp')
   .directive('positionData', function () {
     return {
-      templateUrl: 'templates/positionData.html',
+      templateUrl: 'views/positionData.html',
       restrict: 'E',
       link: function postLink(scope, element, attrs) {
       }

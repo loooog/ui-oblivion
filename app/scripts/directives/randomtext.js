@@ -9,7 +9,7 @@
 angular.module('oblivionApp')
   .directive('randomText', function () {
     return {
-      templateUrl: 'templates/randomText.html',
+      templateUrl: 'views/randomText.html',
       restrict: 'E',
       scope: {
       	type: "@type"

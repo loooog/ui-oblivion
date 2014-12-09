@@ -9,7 +9,7 @@
 angular.module('oblivionApp')
   .directive('fuelStatus', function () {
     return {
-      templateUrl: 'templates/fuelStatus.html',
+      templateUrl: 'views/fuelStatus.html',
       restrict: 'E',
       link: function postLink(scope, element, attrs) {
       }
