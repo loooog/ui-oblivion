@@ -61,6 +61,17 @@ dispatched-drone {
 	@extend .flex-1;
 }
 
+model-viewer {
+	@extend .vertical;
+	@extend .flex-1;
+
+	canvas {
+		@extend .vertical;
+		@extend .flex-1;
+		opacity: .4;
+	}
+}
+
 diagnostic-matrix {
 }
 
