@@ -10,21 +10,22 @@
 			<random-text type="5"></random-text>
 		</div>
 	</div>
-	<div class="horizontal align-center align-middle flex-2 border-w1">
-		<h2 class="green"><span class="green-7">1</span>50</h2>
+	<div class="horizontal align-middle flex-2 pad-l-5 border-w1">
+		<h2 class="green-9 first-green-6" ng-class="{warning:num<=10}">{{num}}</h2>
 	</div>
 </div>
 <div class="vertical flex-2">
 	<div class="horizontal flex-1 border-w1">
-		<!-- this should be WebGL and animated -->
-		<img class="img-responsive" src="images/drone.png">
-<!-- 
+		<!-- this should be WebGL and animated, but the browser can't handle multiple threejs scenes -->
+		<!-- 
 		<div class="vertical flex-1">
 			<model-viewer></model-viewer>
 		</div>
- -->
-	</div>
+		-->
+	<img class="img-responsive" src="images/drone.png">
+</div>
 </div>
 <div class="vertical align-middle align-center flex-1">
-	<!-- D3 CIRCLES -->
+	<viz-circular></viz-circular>
+	<viz-circular></viz-circular>
 </div>

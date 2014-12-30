@@ -173,3 +173,18 @@ $odd_color: rgb(183,245,235);
 .odd-color {
 	color: $odd_color;
 }
+
+.first-green-6 {
+	&::first-letter {
+		color: $green_6;
+	}
+}
+
+.warning {
+	color: $red_8;
+	animation: blink .5s steps(5, start) infinite;
+
+	&::first-letter {
+		color: $red_8;
+	}
+}

@@ -12,6 +12,15 @@ angular.module('oblivionApp')
       templateUrl: 'views/droneTable.html',
       restrict: 'E',
       link: function postLink(scope, element) {
+
+      	scope.drones = [
+      		{id: 1},
+      		{id: 2},
+      		{id: 3},
+      		{id: 4},
+      		{id: 5}
+      	]
+
       }
     };
   });

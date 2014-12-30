@@ -18,8 +18,8 @@
 
       scope.init = function () {
         // Camera
-        camera = new THREE.PerspectiveCamera( 50, contW / contH, 1, 10000 );
-        camera.position.z = 5;
+        camera = new THREE.PerspectiveCamera( 90, contW / contH, .3, 1000 );
+        camera.position.z = 1.5;
 
         // camera = new THREE.PerspectiveCamera( 50, contW/contH, 150, 1000 );
         // cameraPerspectiveHelper = new THREE.CameraHelper( camera );
@@ -44,6 +44,7 @@
           // var mesh = new THREE.Mesh( object, new THREE.MeshBasicMaterial({wireframe: false, color:'rgb(126,208,223'}));
           scene.add(mesh);
           scope.animate();
+          // scope.render();
         })
 
 

@@ -72,6 +72,17 @@ model-viewer {
 	}
 }
 
+viz-circular {
+	@extend .horizontal;
+	@extend .align-center;
+	@extend .flex-1;
+	width: 100%;
+
+	circle {
+		stroke: $green_2;
+	}
+}
+
 diagnostic-matrix {
 }
 

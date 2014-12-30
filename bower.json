@@ -13,7 +13,8 @@
     "angular-route": "~1.2.0",
     "underscore": "~1.7.0",
     "threejs": "*",
-    "jquery": "~2.1.1"
+    "jquery": "~2.1.1",
+    "d3": "~3.5.2"
   },
   "devDependencies": {
     "angular-mocks": "~1.2.0",
