@@ -83,6 +83,12 @@ viz-circular {
 	}
 }
 
+viz-fuel {
+	@extend .horizontal;
+	@extend .flex-1;
+	@extend .align-middle;
+}
+
 diagnostic-matrix {
 }
 

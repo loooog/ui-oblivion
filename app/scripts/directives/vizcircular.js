@@ -9,7 +9,6 @@
 angular.module('oblivionApp')
   .directive('vizCircular', function () {
     return {
-      templateUrl: 'views/vizCircular.html',
       restrict: 'E',
       link: function postLink(scope, element, attrs) {
       	var minDimension = element.width() < element.height() ? element.width() : element.height();
