@@ -7,44 +7,13 @@
 	<div class="vertical margin-b-15" ng-repeat="group in droneTable" test>
 		<div class="horizontal flex-1">
 			<div class="vertical flex-1">
-				<div class="horizontal flex-1 margin-b-5 pad-5" ng-repeat="drone in group"
-				ng-class="{
-				'border-trl-g3': $parent.$index < 3 && $index == 0,
-				'border-rl-g7-g4': ($parent.$index == 0 || $parent.$index == 3) && $index == 1,
-				'border-rl-g7-g4': ($parent.$index == 0 && $index == 1) || ($parent.$index == 3 && $index == 1),
-				'border-brl-g2': $parent.$index < 3 && $index == 2,
-				'border-rl-g4': ($parent.$index == 1 || $parent.$index == 4) && $index == 1,
-				'border-rl-g4-g7': ($parent.$index == 2 || $parent.$index == 5) && $index == 1,
-				'border-trl-g2': $parent.$index > 2 && $index == 0,
-				'border-brl-g3': $parent.$index > 2 && $index == 2}">
-				<div class="vertical flex-2">
-					<div class="vertical flex-1 border-g2 margin-b-5 pad-lr-2">
-						<div class="horizontal">
-							<random-text class="flex-1" type="0"></random-text>
-							<random-text type="4"></random-text>
-						</div>
-						<div class="horizontal">
-							<random-text class="flex-1" type="5"></random-text>
-							<random-text type="5"></random-text>
-							<random-text type="5"></random-text>
-						</div>
-					</div>
-					<div class="horizontal flex-2 align-middle pad-l-5 border-g2">
-						<h2 class="green-9 first-green-6" ng-class="{warning:drone.num<=10}">{{drone.num}}</h2>
-					</div>
+				<dispatched-drone ng-repeat="drone in group"></dispatched-drone>
+				<div class="horizontal pad-t-5 pad-l-5 pad-r-5" ng-show="$index > 2">
+					<random-text class="flex-1" type="1"></random-text>
+					<random-text type="3"></random-text>
 				</div>
-				<div class="flex-3 margin-lr-5 border-g2">
-					<!-- D3 drone should go here but multiple instances of threejs scenes are causing performance issues -->
-					<!-- <img class="img-responsive" src="images/drone.png"> -->
-				</div>
-				<div class="flex-1 border-g4"></div>
 			</div>
-			<div class="horizontal pad-t-5 pad-l-5 pad-r-5" ng-show="$index > 2">
-				<random-text class="flex-1" type="1"></random-text>
-				<random-text type="3"></random-text>
-			</div>
+			<div class="vertical align-center align-middle w-13 red-9" ng-class="{'pad-b-15': $index > 2}" ng-show="$index != 2 && $index != 5">|</div>
 		</div>
-		<div class="vertical align-center align-middle w-13 red-9" ng-class="{'pad-b-15': $index > 2}" ng-show="$index != 2 && $index != 5">|</div>
 	</div>
-</div>
 </div>
