@@ -1,5 +1,5 @@
-.border-w1 {
-	border: 1px solid $white_1;
+.border-g2 {
+	border: 1px solid $green_2;
 }
 .border-g4 {
 	border: 1px solid $green_4;
@@ -34,6 +34,8 @@
 	border-right: 1px dotted $white_3;
 }
 
+
+
 .border-trl-g3 {
 	border: 1px solid $green_3;
 	border-bottom: none;
@@ -44,17 +46,17 @@
 	border-bottom: none;
 	border-radius: 2px
 }
-.border-rl-y4-g5 {
-	border-left: 1px solid $yellow_4;
-	border-right: 1px solid $green_5;
+.border-rl-g7-g4 {
+	border-left: 1px solid $green_7;
+	border-right: 1px solid $green_4;
 }
-.border-rl-g5-y4 {
-	border-left: 1px solid $green_5;
-	border-right: 1px solid $yellow_4;
+.border-rl-g4-g7 {
+	border-left: 1px solid $green_4;
+	border-right: 1px solid $green_7;
 }
-.border-rl-g5 {
-	border-left: 1px solid $green_5;
-	border-right: 1px solid $green_5;
+.border-rl-g4 {
+	border-left: 1px solid $green_4;
+	border-right: 1px solid $green_4;
 }
 .border-brl-g2 {
 	border: 1px solid $green_2;
