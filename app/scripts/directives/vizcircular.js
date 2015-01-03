@@ -6,20 +6,26 @@
  * @description
  * # vizCircular
  */
-angular.module('oblivionApp')
-  .directive('vizCircular', function () {
-    return {
-      restrict: 'E',
-      link: function postLink(scope, element, attrs) {
-      	var minDimension = element.width() < element.height() ? element.width() : element.height();
+ angular.module('oblivionApp')
+ .directive('vizCircular', function () {
+  return {
+    restrict: 'E',
+    scope: {
+      size: "@"
+    },
+    link: function postLink(scope, element, attrs) {
+      // TBD: responsive SVGs are tough, 
+      element.css('width',scope.size);
+      element.css('height',scope.size);
 
-      	d3.select(element[0]).append('svg')
-      		.attr('width',minDimension)
-      		.attr('height',minDimension)
-      	.append('circle')
-      		.attr('cx', minDimension/2)
-      		.attr('cy', minDimension/2)
-      		.attr('r', minDimension/2 - 2)
-      }
-    };
-  });
+      d3.select(element[0]).append('svg')
+      .append('circle')
+      .attr({
+        cx: scope.size/2,
+        cy: scope.size/2,
+        r: scope.size/2,
+        stroke: 'rgba(126,208,223,.2)'
+      })
+    }
+  };
+});

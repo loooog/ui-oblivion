@@ -11,9 +11,9 @@
   return {
       restrict: 'E',
       link: function postLink(scope, element, attrs) {
-
+        console.log(element.height())
       	var w = _.random(element.width()/2,element.width());
-      	var h = 12;
+        var h = 12;
       	var tickWidth = 3;
       	var padding = 1;
       	var dataset = _.range(w/(tickWidth));

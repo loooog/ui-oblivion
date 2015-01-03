@@ -72,21 +72,9 @@ model-viewer {
 	}
 }
 
-viz-circular {
-	@extend .horizontal;
-	@extend .align-center;
-	@extend .flex-1;
-	width: 100%;
-
-	circle {
-		stroke: $green_2;
-	}
-}
-
 viz-fuel {
 	@extend .horizontal;
 	@extend .flex-1;
-	@extend .align-middle;
 }
 
 dot-grid {
@@ -95,6 +83,9 @@ dot-grid {
 	right: 0;
 	bottom: 0;
 	left: 0;
+}
+
+viz-circular {
 }
 
 diagnostic-matrix {

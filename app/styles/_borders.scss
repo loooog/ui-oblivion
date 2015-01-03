@@ -68,3 +68,16 @@
 	border-top: none;
 	border-radius: 2px
 }
+
+.border-partial-b-g2 {
+	position: relative;
+	&::after {
+		content: '';
+		width: 90px;
+		height: 1px;
+		background: $green_2;
+		position: absolute;
+		top: -4px;
+		left: 0;
+	}
+}
