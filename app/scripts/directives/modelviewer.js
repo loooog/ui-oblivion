@@ -34,18 +34,18 @@
 				// scene.add( light );
 
         // Mesh
-        loader = new THREE.JSONLoader();
-        loader.load('images/drone.js', function( object ){
-          mesh = new THREE.Mesh(object, new THREE.MeshBasicMaterial({
-            wireframe: true,
-            color: 'rgb(126,208,223)'
-          }));
+        // loader = new THREE.JSONLoader();
+        // loader.load('images/drone.js', function( object ){
+        //   mesh = new THREE.Mesh(object, new THREE.MeshBasicMaterial({
+        //     wireframe: true,
+        //     color: 'rgb(126,208,223)'
+        //   }));
 
-          // var mesh = new THREE.Mesh( object, new THREE.MeshBasicMaterial({wireframe: false, color:'rgb(126,208,223'}));
-          scene.add(mesh);
-          scope.animate();
-          // scope.render();
-        })
+        //   // var mesh = new THREE.Mesh( object, new THREE.MeshBasicMaterial({wireframe: false, color:'rgb(126,208,223'}));
+        //   scene.add(mesh);
+        //   scope.animate();
+        //   // scope.render();
+        // })
 
 
 				// mesh = new THREE.Mesh(new THREE.BoxGeometry(200, 200, 200), new THREE.MeshBasicMaterial({
