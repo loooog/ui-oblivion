@@ -14,16 +14,40 @@
     this.num = _.random(50,300);
   }
 
+  var Engine = function() {
+    this.tank_1 = _.random(30,90)/100;
+    this.tank_2 = _.random(30,90)/100;
+    this.thrust = _.random(30,90)/100;
+  }
+
   return {
+    getFuelStatus: function() {
+      var val = [];
+      _.each(_.range(2), function(a) {
+        val[a] = new Engine();
+      })
+      return val;
+    },
     getDroneTable: function () {
-      var matrix = [];
-      for(var i=0; i<6; i++) {
-        matrix[i] = [];
-        for(var j=0; j<3; j++) {
-          matrix[i][j] = new Drone();
-        }
-      }
-      return matrix;
+      var val = [];
+      _.each(_.range(6), function(g){
+       val[g] = [];
+       _.each(_.range(3), function(d) {
+        val[g][d] = new Drone();
+       })
+    })
+      return val;
+    },
+    getEnergyUsage: function() {
+      var val = [];
+      _.each(_.range(15), function(a) {
+        val[a] = [];
+        _.each(_.range(6), function(b) {
+          val[a][b] = _.random(1)*100;
+        })
+      })
+      console.log(val)
+      return val;
     }
   };
 

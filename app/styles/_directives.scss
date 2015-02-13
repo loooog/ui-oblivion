@@ -99,3 +99,9 @@ ammunition {
 
 energy-usage {
 }
+
+viz-energy-usage {
+	display: block;
+	@extend .flex-1;
+	border-left: 1px solid red;
+}

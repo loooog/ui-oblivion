@@ -7,11 +7,14 @@
  * # fuelStatus
  */
 angular.module('oblivionApp')
-  .directive('fuelStatus', function () {
+  .directive('fuelStatus', function (dataService) {
     return {
       templateUrl: 'views/fuelStatus.html',
       restrict: 'E',
       link: function postLink(scope, element, attrs) {
+
+      	scope.fuelStatus = dataService.getFuelStatus();
+
       }
     };
   });

@@ -43,8 +43,8 @@
 
           // var mesh = new THREE.Mesh( object, new THREE.MeshBasicMaterial({wireframe: false, color:'rgb(126,208,223'}));
           scene.add(mesh);
-          // scope.animate();
-          scope.render();
+          scope.animate();
+          // scope.render();
         })
 
 
